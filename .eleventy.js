@@ -15,6 +15,7 @@ const twigOptions = {
 module.exports = (config) => {
   config.addPassthroughCopy({ 'public': './' })
   config.addPassthroughCopy({'src/admin': 'admin'})
+  config.addPassthroughCopy({'src/assets': 'assets'})
   config.addPassthroughCopy({'src/favicon.ico': 'favicon.ico'})
   config.addPlugin(twig, twigOptions)
   config.setBrowserSyncConfig({
