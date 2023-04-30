@@ -5,15 +5,15 @@
   "main": "index.js",
   "config": {
     "11ty": "eleventy --quiet",
-    "css": "tailwindcss -i src/_styles/_main.pcss -o _site/assets/main.bundle.css --postcss",
-    "js": "esbuild src/_scripts/_main.js --outfile=_site/assets/main.bundle.js --bundle"
+    "css": "tailwindcss -i src/_styles/_main.pcss -o dist/assets/main.bundle.css --postcss",
+    "js": "esbuild src/_scripts/_main.js --outfile=dist/assets/main.bundle.js --bundle"
   },
   "scripts": {
     "build": "NODE_ENV=production npm-run-all clean -p build:*",
     "build:11ty": "$npm_package_config_11ty",
     "build:css": "$npm_package_config_css --minify",
     "build:js": "$npm_package_config_js --minify",
-    "clean": "rm -rf _site",
+    "clean": "rm -rf dist",
     "dev": "NODE_ENV=development npm-run-all -p dev:*",
     "dev:11ty": "$npm_package_config_11ty --serve",
     "dev:css": "$npm_package_config_css --watch",
