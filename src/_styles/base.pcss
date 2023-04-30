@@ -1,0 +1,45 @@
+/* Custom Base Styles Go Here. */
+html {
+  @apply antialiased text-gray-800 font-sans;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-3xl mb-4;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+p + p {
+  @apply mt-4;
+}
+
+a {
+  @apply text-primary-500;
+}
+
+a:hover, a:focus {
+  @apply text-primary-700;
+}
+
+label {
+  @apply block;
+}
+
+input, textarea {
+  @apply block w-full p-2 border border-solid border-gray-500 shadow-inner;
+}
+
+input:focus, textarea:focus {
+  @apply outline-none;
+}
+
+/* This allows you to hide Alpine DOM until it's ready to go. */
+[x-cloak] {
+  @apply hidden;
+}
