@@ -1,29 +1,46 @@
 /* Custom Components Go Here. */
 
 .button {
-    @apply p-2 rounded;
-  }
+  @apply p-2 rounded;
+}
 
-  .button:focus {
-    @apply outline-none;
-  }
+.button:focus {
+  @apply outline-none;
+}
 
-  .button--primary {
-    @apply bg-primary-500 text-white;
-  }
+.button--primary {
+  @apply bg-primary-500 text-white;
+}
 
-  .button--primary:hover, .button--primary:focus {
-    @apply bg-primary-700 text-white;
-  }
+.button--primary:hover, .button--primary:focus {
+  @apply bg-primary-700 text-white;
+}
 
-  .social-media {
-    @apply text-2xl;
-  }
+.social-media {
+  @apply text-2xl;
+}
 
-  .social-media a {
-    @apply text-gray-700 p-4;
-  }
+.social-media a {
+  @apply text-gray-700 p-4;
+}
 
-  .social-media a:hover, .social-media a:focus {
-    @apply text-primary-500;
-  }
+.social-media a:hover, .social-media a:focus {
+  @apply text-primary-500;
+}
+
+spline-viewer {
+  position: relative;
+}
+
+spline-viewer:after {
+  content: ' ';
+  display: block;
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
