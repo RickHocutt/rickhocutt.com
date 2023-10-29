@@ -1,5 +1,12 @@
 module.exports = {
   content: ['./src/**/*.{js,md,twig,svg,html}'],
+  safelist: [
+    'md:hidden',
+    'md:block',
+    {
+      variants: ['lg', 'hover', 'focus', 'lg:hover'],
+    },
+  ],
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
