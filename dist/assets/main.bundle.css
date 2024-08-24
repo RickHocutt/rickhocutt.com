@@ -1422,6 +1422,14 @@ spline-viewer:after {
   margin-top: 4rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -1452,6 +1460,10 @@ spline-viewer:after {
 
 .w-full {
   width: 100%;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .max-w-2xl {
